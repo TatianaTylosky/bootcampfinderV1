@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootcamp Finder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+        <style>
+            
+            nav {
+                background-color: blue;
+                padding: 20px;
+                color: white;
+                font-size: 30px;
+            }
+
+            div#main {
+                max-width: 500px;
+                padding: 20px;
+            }
+
+            nav .title {
+                font-weight: bold;
+            }
+
+            a.active {
+                font-weight: bold;
+            }
+            
+            body {
+                background-color: aliceblue;
+            }
+
+            div.footer {
+                background-color: blue;
+                padding: 20px;
+                color: white;
+                font-size: 30px;
+            }
+
+            .lead_capture {
+                text-align: center;
+                color: orange;
+            }
+
+            .lead_capture > input {
+                /*display: block;*/
+                margin: 0;
+                /*width: 100%;*/
+                font-family: sans-serif;
+                font-size: 20px;
+                box-shadow: none;
+                border-radius: none;
+            }
+
+            .lead_capture > button {
+                font-family: sans-serif;
+                font-size: 20px;
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Bootcamp Finder</h1>
+        <nav>
+            <span class="title">Find your career</span>
+            <a href="#">Home</a> |
+            <a href="#">About</a> |
+            <a href="#">Contact Us</a>
+        </nav>
+        <div id="main">
+            <br>
+            {% block content %}{% endblock %}
+            <br>
+        </div>
+        <footer>
+    {% block footer %}
+        <div class="footer"
+            <h2>Start learning right now for 1/10 the price with one on one mentorship!!! ZOMG!!</h2>
+            <div class="lead_capture">
+                <input></input> <button>GIVE US YOUR EMAIL AND GET $$$</button>
+            </div>
+        </div>
+    {% endblock %}
+</footer>
+    </body>
+</html>
